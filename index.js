@@ -6,12 +6,19 @@ let myLeads = [];
 
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
+  inputEl.value = " ";
+
   renderLead();
 });
 
 function renderLead() {
   ulEl.innerHTML = "Leads :";
   for (let i = 0; i < myLeads.length; i++) {
-    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+    ulEl.innerHTML += `
+      <li>
+        <a target='_blank' href='${myLeads[i]}'> 
+        ${myLeads[i]}  
+        </a>
+    </li>`;
   }
 }
