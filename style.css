@@ -26,3 +26,16 @@ body {
   font-weight: bold;
   font-size: medium;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 5px;
+}
+
+a {
+  color: rgb(2, 141, 165);
+}

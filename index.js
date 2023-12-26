@@ -12,13 +12,14 @@ inputBtn.addEventListener("click", function () {
 });
 
 function renderLead() {
-  ulEl.innerHTML = "Leads :";
+  let listItems = "";
   for (let i = 0; i < myLeads.length; i++) {
-    ulEl.innerHTML += `
+    listItems += `
       <li>
-        <a target='_blank' href='${myLeads[i]}'> 
-        ${myLeads[i]}  
-        </a>
-    </li>`;
+         <a target='_blank' href='${myLeads[i]}'> 
+              ${myLeads[i]}  
+         </a>
+      </li>`;
   }
+  ulEl.innerHTML = listItems;
 }
