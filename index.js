@@ -3,6 +3,7 @@ const inputEl = document.getElementById("input-el");
 let ulEl = document.getElementById("ul-el");
 
 let myLeads = [];
+
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
 if (leadsFromLocalStorage) {
