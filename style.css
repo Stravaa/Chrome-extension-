@@ -6,7 +6,7 @@ body {
 }
 
 #input-el {
-  border: 1px solid rgb(2, 141, 165);
+  border: 1px solid rgb(70, 193, 191);
   border-radius: 5px;
   width: 100%;
   min-width: 150px;
@@ -16,22 +16,44 @@ body {
 }
 
 #input-btn,
-#delete-btn {
-  background-color: rgb(10, 171, 199);
+#delete-btn,
+#tab-btn {
+  background-color: rgb(70, 193, 191);
   color: white;
-  border: 1px solid rgb(10, 171, 199);
+  border: 1px solid rgb(70, 193, 191);
   border-radius: 5px;
-  width: 150px;
+  width: 115px;
   padding: 10px 15px;
   margin: 5px 0;
   cursor: pointer;
   font-weight: bold;
   font-size: medium;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 #delete-btn {
-  background-color: rgb(255, 255, 255);
-  color: rgb(10, 171, 199);
+  background-color: rgb(238, 187, 68);
+  border: 1px solid rgb(238, 187, 68);
+}
+
+#input-btn:hover,
+#tab-btn:hover,
+#delete-btn:hover {
+  background-color: rgba(70, 193, 191, 0.932);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#delete-btn:hover {
+  background-color: rgba(238, 187, 68, 0.842);
+}
+
+#input-btn:active,
+#tab-btn:active {
+  background-color: rgb(59, 175, 173);
+}
+
+#delete-btn:active {
+  background-color: rgb(230, 180, 65);
 }
 
 ul {
