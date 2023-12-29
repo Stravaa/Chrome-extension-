@@ -40,7 +40,7 @@ body {
 #tab-btn:hover,
 #delete-btn:hover {
   background-color: rgba(70, 193, 191, 0.932);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.171);
 }
 
 #delete-btn:hover {
